@@ -1,10 +1,9 @@
-//Stocke l'élément HTML avec l'id 'items' dans une constante
+// Stocke l'élément HTML avec l'id 'items' dans une constante
 const $items = document.getElementById('items');
 
 /**
- * Image du produit
- * Crée un élément img et ses attributs et le retourne
- * @param {Object} product
+ * Crée l'élément img du produit
+ * @param {Object} product un produit du catalogue
  * @return {HTMLImageElement} img
  */
 const createProductImage = (product) => {
@@ -16,9 +15,8 @@ const createProductImage = (product) => {
 };
 
 /**
- * Nom du produit
- * Crée un élément h3, lui attribue une classe, définit son contenu textuel et le retourne
- * @param {Object} product
+ * Crée l'élément h3 contenant le nom du produit
+ * @param {Object} product un produit du catalogue
  * @return {HTMLHeadingElement} h3
  */
 const createProductName = (product) => {
@@ -30,9 +28,8 @@ const createProductName = (product) => {
 };
 
 /**
- * Description du produit
- * Crée un élément p, lui attribue une classe, définit son contenu textuel et le retourne
- * @param {Object} product
+ * Crée un élément p contenant la description du produit
+ * @param {Object} product un produit du catalogue
  * @return {HTMLParagraphElement} p
  */
 const createProductDescription = (product) => {
@@ -44,10 +41,8 @@ const createProductDescription = (product) => {
 };
 
 /**
- * Carte du produit
- * Crée un élément a et ses attributs, lui ajoute un élément enfont article
- * auquel on a ajouté des éléments img, h3 et p, et le retourne
- * @param {Object} product
+ * Crée un élément a contenant la carte produit
+ * @param {Object} product un produit du catalogue
  * @return {HTMLAnchorElement} a
  */
 const createProductCard = (product) => {
